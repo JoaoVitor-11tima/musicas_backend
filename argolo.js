@@ -16,7 +16,7 @@ const sql = mysql2.createPool({
 
 app.get("/", (request, response) => {
     const comandoSelect = "SELECT * FROM musicas_joaocardoso"
-
+    
     sql.query(comandoSelect, (error, data) => { 
         if (error){
             console.log(error)
